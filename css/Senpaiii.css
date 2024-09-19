@@ -1,0 +1,493 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+   }
+
+html{
+    background-color: #f6f8f7;
+    height: 400vh;
+    width: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+#header {
+    background: white;
+    border-bottom: #616161 solid 0.5px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 102;
+    padding: 0;
+    backdrop-filter: blur(10px);
+}
+#header #logo {
+    display: block;
+    height: 100px;
+    margin: -18px 0px 0px 15%;
+    float: left;
+}
+#header #logo img {
+    height: 70%;
+    width: auto;
+}
+#logo {
+    position: relative;
+    top: 15px;
+}
+
+#header #logo span {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff!important;
+}
+.header-setting {
+    float: left;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    top: 8px;
+    margin-left: 20px;
+}
+.hs-toggles {
+    padding: 15px 0;
+}
+.header-name {
+    font-size: 20px;
+    font-weight:700;
+    line-height: 20px;
+    padding: 15px;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*search bar*/
+input[type=text] {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #e7e6e6;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 5px 20px 5px 40px;
+  position: relative;
+  top: -27px;
+  left: 105.8%;
+}
+/*login button*/
+.login-btn{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    background-color: #2aaddc;
+    padding: 5px 20px;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    top:-27px;
+    left:110%;
+    margin-left: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login-btn:hover{
+    color: white;
+    background-color: #f3885a;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/*bell icon*/
+.notification{
+    position: relative;
+    top:-25px;
+    left:108%;
+    color: black;
+}
+
+/*dropdown*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .dropdown-content a:hover {background-color: whitesmoke;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+/*body*/
+
+body {
+    scrollbar-width: 10px;
+   }
+   a {
+    text-decoration: none!important;
+}
+
+.body{
+    margin: 0 10% 0 10%;
+}
+.popular-anime{
+    background-color: white;
+    padding: 16px;
+    color: black;
+    text-align: center;
+    margin: 20px 5% 20px 5%;
+    width: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifS;
+    border-radius: 10px;
+    margin-top: 10%;
+    padding-bottom: 40px;
+}
+.anime-img{
+    height: 55%;
+    width: auto;
+}
+.card {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 200px;
+    margin-bottom: 1.6em;
+    text-align: center;
+}
+.cardGrid {
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+.pop-img{
+    width: 90%;
+    height: justify;
+    border-radius: 10%;
+}
+.pop-anime{
+    position: relative; 
+    top: 10px;
+    font-size: 30px;
+}
+.button-pop-anime {
+    position: relative;
+    top: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    padding: 0.8em 1.5em;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.65px;
+    background-color: #2aaddc;
+    color: black;
+}
+.button-pop-anime:hover{
+    color: white;
+    background-color: #f3885a;
+}
+.cardName{
+    color: black;
+}
+.popular-Manga{
+    background-color: white;
+    padding: 16px;
+    color: black;
+    text-align: center;
+    margin: 20px 5% 20px 5%;
+    width: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifS;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-bottom: 40px;
+}
+.pop-manga{
+    position: relative; 
+    top: 10px;
+    font-size: 30px;
+}
+.Reviews{
+    background-color: white;
+    padding: 16px;
+    color: black;
+    text-align: center;
+    margin: 20px 5% 20px 5%;
+    width: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifS;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-bottom: 40px;
+}
+.Review-img{
+    height: 150px;
+    width: 130%;
+    border-radius: 0;
+}
+.Review-cardGrid {
+    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+    right: 20px;
+}
+.review-card {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 200px;
+    margin-bottom: 1.6em;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+}
+.review-cardName{
+    color: black;
+    position: relative;
+    left: 25px;
+}
+.top-characters{
+    background-color: white;
+    padding: 16px;
+    color: black;
+    text-align: center;
+    margin: 20px 5% 20px 5%;
+    width: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifS;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-bottom: 40px;
+}
+.top-char{
+    position: relative; 
+    top: 10px;
+    font-size: 30px;
+}
+
+.top-hated-characters{
+    background-color: white;
+    padding: 16px;
+    color: black;
+    text-align: center;
+    margin: 20px 5% 20px 5%;
+    width: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifS;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-bottom: 40px;
+}
+.top-hated-char{
+    position: relative; 
+    top: 10px;
+    font-size: 30px;
+}
+
+/*footer*/
+.footer{
+    background-color: #e3e3e3;
+    height: 34vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 208px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .footer-container{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 45px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo{
+    height: auto; 
+    width: 165px;
+    position: relative;
+  }
+  .footer button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 6px;
+    left: 15%;
+    background-color: #f3885a;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .footer h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+    left: 15%;
+    font-size: 20px;
+  }
+  .footer-social{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 47%;
+    bottom: 25%;
+  }
+  .support{
+    font-weight: 800;
+    color:#2aaddc ;
+  }
+  .footer-social ul .fab {
+    font-size: 1.2em;
+    margin: 8px 0 8px 0px;
+}
+  .icons{
+    color: black;
+    text-decoration: none;
+    float: left;
+    font-size:35px;
+    border-radius: 10px;
+  }
+
+  .footer-social ul li {
+    font-size: 0.64em;
+    padding-right: 0.6em;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+}
+.footer-social ul li a {
+    display: inline-block;
+    border-radius: var(--ap-border-radius);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+}
+  .fab {
+    font-weight: 700;
+
+  }
+  .fab {
+    font-family: 'Font Awesome 6 Brands';
+  }
+  .color1 {
+    color: black;
+  }
+  .color2 {
+    color: black;
+  }
+  .color3 {
+    color: black;
+  }
+  .color4 {
+    color: black;
+  }
+  .color5 {
+    color: black;
+  }
+  .color1:hover{
+    color: #1877F2;
+  }
+  .color2:hover{
+    color: #1DA1F2;
+  }
+  .color3:hover{
+    color:#e34471;
+  }
+  .color4:hover{
+    color: #7289da;
+  }
+  .color5:hover{
+    color: #0077B5;
+  }
+
+  .footer-about{
+    position: relative;
+    float: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    right: 15%;
+    bottom: 40%;
+    font-size: 22px;
+    color: #2aaddc;
+    font-weight: 400;
+  }
+  .footer-about ul li{
+    list-style-type:none;
+    line-height:170%
+  }
+  .footer-about a{
+    color: #2aaddc;
+  }
+
+  .footer-about li:hover{
+    text-decoration: underline;
+  }
+
+/*dark mode
+html.darkmode {
+    --site-background: #1f1f1f;
+    --site-background--inverted: #C3C7CD;
+    --overlay-background: #282828;
+    --callout-background: #282828;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #292c35;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 30px;
+  left: 40px;
+}
+
+.fa-moon {color: whitesmoke; position: relative; left:10px ;}
+
+.fa-sun {color: #eea836; position: relative; right: 10px;}
+
+.checkbox-label .ball  {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(92px);
+}
+*/
